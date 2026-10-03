@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 240" font-family="'DM Mono', ui-monospace, monospace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#162837"/><stop offset="1" stop-color="#101b25"/></linearGradient>
+  </defs>
+  <rect width="480" height="240" fill="url(#bg)"/>
+  <rect x="20" y="42" width="440" height="184" rx="6" fill="#0c1620" stroke="#83a7ff" stroke-opacity=".14"/>
+
+  <!-- Intersection (camera view) -->
+  <svg x="20" y="42" width="300" height="184" viewBox="0 0 300 184">
+    <rect width="300" height="184" fill="#121d24"/>
+    <rect x="115" y="0" width="70" height="184" fill="#262e35"/>
+    <rect x="0" y="62" width="300" height="60" fill="#262e35"/>
+    <g stroke="#d6d8c9" stroke-opacity=".45" stroke-dasharray="8 7" stroke-width="1.5">
+      <line x1="150" y1="0" x2="150" y2="54"/><line x1="150" y1="130" x2="150" y2="184"/>
+      <line x1="0" y1="92" x2="107" y2="92"/><line x1="193" y1="92" x2="300" y2="92"/>
+    </g>
+    <g fill="#e8e6d8" fill-opacity=".35">
+      <rect x="119" y="52" width="5" height="8"/><rect x="129" y="52" width="5" height="8"/><rect x="139" y="52" width="5" height="8"/><rect x="156" y="52" width="5" height="8"/><rect x="166" y="52" width="5" height="8"/><rect x="176" y="52" width="5" height="8"/>
+      <rect x="119" y="124" width="5" height="8"/><rect x="129" y="124" width="5" height="8"/><rect x="139" y="124" width="5" height="8"/><rect x="156" y="124" width="5" height="8"/><rect x="166" y="124" width="5" height="8"/><rect x="176" y="124" width="5" height="8"/>
+    </g>
+
+    <!-- Emergency vehicle (northbound lane) -->
+    <rect x="159" y="140" width="18" height="34" rx="3" fill="#f2f4f8"/>
+    <rect x="161" y="143" width="14" height="6" rx="1" fill="#24313d"/>
+    <rect x="164" y="154" width="8" height="2.5" fill="#e64d70"/><rect x="166.75" y="151.25" width="2.5" height="8" fill="#e64d70"/>
+    <rect x="160" y="140" width="6" height="2" fill="#ff4d6d"/><rect x="170" y="140" width="6" height="2" fill="#4d83ff"/>
+    <rect x="154" y="134" width="28" height="44" fill="none" stroke="#50dfa8" stroke-width="1.5"/>
+    <rect x="154" y="125" width="70" height="9" fill="#50dfa8"/>
+    <text x="157" y="132" font-size="6.5" fill="#06221a">ambulance 0.94</text>
+
+    <!-- Regular vehicles -->
+    <rect x="124" y="12" width="16" height="28" rx="3" fill="#2a85ec"/>
+    <rect x="120" y="8" width="24" height="36" fill="none" stroke="#4d83ff" stroke-width="1"/>
+    <text x="120" y="6" font-size="6" fill="#82a4ff">car 0.88</text>
+
+    <rect x="30" y="98" width="30" height="16" rx="3" fill="#8767ff"/>
+    <rect x="26" y="95" width="38" height="22" fill="none" stroke="#8767ff" stroke-width="1"/>
+    <text x="26" y="124" font-size="6" fill="#a593ff">car 0.91</text>
+    <rect x="72" y="98" width="28" height="16" rx="3" fill="#2a85ec"/>
+    <rect x="68" y="95" width="36" height="22" fill="none" stroke="#4d83ff" stroke-width="1"/>
+
+    <rect x="236" y="70" width="30" height="16" rx="3" fill="#2a85ec"/>
+    <rect x="232" y="67" width="38" height="22" fill="none" stroke="#4d83ff" stroke-width="1"/>
+    <text x="232" y="63" font-size="6" fill="#82a4ff">car 0.86</text>
+
+    <!-- Signal -->
+    <rect x="196" y="132" width="14" height="36" rx="3" fill="#0a0f16" stroke="#3a4655"/>
+    <circle cx="203" cy="141" r="3.5" fill="#4a1f28"/>
+    <circle cx="203" cy="150" r="3.5" fill="#4a3f1f"/>
+    <circle cx="203" cy="159" r="3.5" fill="#72e1b3"/>
+    <circle cx="203" cy="159" r="7" fill="#72e1b3" fill-opacity=".2"/>
+
+    <rect x="8" y="8" width="44" height="12" rx="2" fill="#0a0f16" fill-opacity=".8"/>
+    <circle cx="15" cy="14" r="2.5" fill="#ff4d6d"/>
+    <text x="21" y="17" font-size="6.5" fill="#c7d3ea">LIVE</text>
+  </svg>
+
+  <!-- Density / priority panel -->
+  <text x="334" y="62" font-size="8" fill="#74829b" letter-spacing="1">TRAFFIC DENSITY</text>
+  <g font-size="7.5" fill="#a8b4c8">
+    <text x="334" y="82">N</text><rect x="346" y="76" width="100" height="6" rx="3" fill="#ffffff" fill-opacity=".05"/><rect x="346" y="76" width="34" height="6" rx="3" fill="#4d83ff"/>
+    <text x="334" y="98">S</text><rect x="346" y="92" width="100" height="6" rx="3" fill="#ffffff" fill-opacity=".05"/><rect x="346" y="92" width="22" height="6" rx="3" fill="#4d83ff"/>
+    <text x="334" y="114">E</text><rect x="346" y="108" width="100" height="6" rx="3" fill="#ffffff" fill-opacity=".05"/><rect x="346" y="108" width="40" height="6" rx="3" fill="#6f78ff"/>
+    <text x="334" y="130">W</text><rect x="346" y="124" width="100" height="6" rx="3" fill="#ffffff" fill-opacity=".05"/><rect x="346" y="124" width="72" height="6" rx="3" fill="#8767ff"/>
+  </g>
+  <rect x="334" y="146" width="112" height="30" rx="4" fill="#0f2a22" stroke="#50dfa8" stroke-opacity=".6"/>
+  <text x="342" y="158" font-size="6.5" fill="#80edbd" letter-spacing=".8">EMERGENCY · DETECTED</text>
+  <text x="342" y="170" font-size="7.5" fill="#d4fff3">Priority → S lane green</text>
+  <text x="334" y="196" font-size="6.5" fill="#74829b">signal timing adapts to</text>
+  <text x="334" y="206" font-size="6.5" fill="#74829b">real-time lane density</text>
+</svg>
